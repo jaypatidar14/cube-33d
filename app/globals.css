@@ -69,3 +69,13 @@ canvas {
   mix-blend-mode: screen;
 
 }
+
+.mask-gradient {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+/* Optional: Add any other global styles you need */
+body {
+  @apply bg-black text-white;
+}
