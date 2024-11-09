@@ -1,22 +1,8 @@
-// app/layout.tsx
-import "./globals.css"; // Import your global styles
-import Navbar from "../components/Navbar"; // Adjust the path as needed
-import Cube from '../components/Cube';
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// app/page.tsx
+export default function Page() {
   return (
-    <html lang="en">
-      <body>
-        {/* Include the Navbar at the top */}
-        <Navbar />
-        <Cube/>
-        {/* Render the main content */}
-        <main>{children}</main>
-      </body>
-    </html>
+    <div>
+      <h1 className="text-white">Welcome to My Spotlight Cube Page!</h1>
+    </div>
   );
 }
